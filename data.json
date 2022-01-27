@@ -1,0 +1,145 @@
+{
+    "city":[
+        { "_id":1,
+      "city_name": "Delhi",
+      "country_name": "India"
+        },
+        {
+        "_id":2,
+        "city_name": "Pune",
+        "country_name": "India"
+        },
+        {
+        "_id":3,
+        "city_name": "Mumbai",
+        "country_name": "India"
+        },
+        {
+        "_id":4,
+        "city_name": "Chennai",
+        "country_name": "India"
+        },
+        {
+        "_id":5,
+        "city_name": "Kolkata",
+        "country_name": "India"
+        }
+    ],
+    "category":[
+    {
+        "id":1,
+        "name":"JW MARRIOTT HOTEL NEW DELHI AEROCITY",
+        "category_id":1
+    },
+    {
+        "id":2,
+        "name":"ITC MAURYA, A LUXURY COLLECTION HOTEL",
+        "category_id":1
+    },
+    {
+        "id":3,
+        "name":"THE OBEROI NEW DELHI",
+        "category_id":1
+    },
+    {
+        "id":4,
+        "name":"THE LODHI NEW DELHI",
+        "category_id":1
+    },
+    {
+        "id":5,
+        "name":"THE LEELA PALACE NEW DELHI",
+        "category_id":1
+    },
+    {
+        "id":6,
+        "name":"Conrad",
+        "category_id":2
+    },
+    {
+        "id":7,
+        "name":"The Ritz-Carlton",
+        "category_id":2
+    },
+    {
+        "id":8,
+        "name":"The Corinthians Resort & Club",
+        "category_id":2
+    },
+    {
+        "id":9,
+        "name":"Hyatt Regency Pune Hotel & Residences",
+        "category_id":2
+    },
+    {
+        "id":10,
+        "name":"The Westin Pune Koregaon Park",
+        "category_id":2
+    },
+    {
+        "id":11,
+        "name":"TRIDENT",
+        "category_id":3
+    },
+    {
+        "id":12,
+        "name":"ITC Maratha, Mumbai",
+        "category_id":3
+    },
+    {
+        "id":13,
+        "name":"Sahara Star Hotel",
+        "category_id":3
+    },
+    {
+        "id":14,
+        "name":"The Oberoi",
+        "category_id":3
+    },
+    {
+        "id":15,
+        "name":"Taj Santacruz",
+        "category_id":3
+    },
+    {
+        "id":16,
+        "name":"chola",
+        "category_id":4
+    },
+    {
+        "id":17,
+        "name":"chola",
+        "category_id":4
+    },
+    {
+        "id":18,
+        "name":"chola",
+        "category_id":4
+    },
+    {
+        "id":19,
+        "name":"chola",
+        "category_id":4
+    },
+    {
+        "id":20,
+        "name":"chola",
+        "category_id":4
+    },
+    {
+        "id":5,
+        "name":"vivanta",
+        "category_id":5
+    },
+    {
+        "id":6,
+        "name":"hello",
+        "category_id":6
+    },
+    {
+        "id":7,
+        "name":"hi",
+        "category_id":7
+    }
+  ]
+}
