@@ -57,3 +57,7 @@ footer{
 .btn{
     margin-left: 5%;
 }
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}

@@ -6,45 +6,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="home.css" rel="stylesheet" type="text/css"/>
-    <title>Carlance</title>
-    <script src="home.js"></script>
-        
+    <title>Carlance</title>  
     </head>
     <body>
-      <span style="float:right;color: white;margin-right: 1%;margin-top: -0.4%;">
-        <p id="out"></p>
-        <div id="icon"></div>
-        <p id="address"></p>
-      </span>
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header"style="height:45px">
-              <h6 class="modal-title" id="exampleModalLongTitle">Ads</h6>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img src="http://blog.olacabs.com/wp-content/uploads/2017/09/Generic-Mailer-1.jpg" class="img-fluid ">
-            </div>
-          </div>
-        </div>
-      </div>
       <nav class="navbar bg-dark navbar-dark navbar-expand-lg">
         <div class="container">
-          <a href="home.html" class="navbar-brand">CARLANCE</a>
+          <a href="index.html" class="navbar-brand">CARLANCE</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href="" class="nav-link active">Home</a></li>
-              <li class="nav-item"><a href="" class="nav-link">About</a></li>
-              <li class="nav-item"><a href="" class="nav-link">Book</a></li>
+              <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
               <li class="nav-item"><a href="" class="nav-link">Contact Us</a></li>
               <li class="nav-item"><a href="" class="nav-link">Services</a></li>
             </ul>
+            <a href="" class="btn btn-outline-light btn-md">Book Now</a>
           </div>
         </div>
       </nav>
@@ -114,42 +92,5 @@
          </center>
         </div>
       </footer>
-      <script>
-        window.onload=getCity();
-        $(document).ready(function(){
-          $('#exampleModalCenter').modal('show');
-        });
-        window.onload = geolocation();
-    var x = document.getElementById("out")
-    var y = document.getElementById("address")
-    var z =  document.getElementById('icon')
-    function geolocation(){
-        if(navigator.geolocation){
-            navigator.geolocation.getCurrentPosition(showPosition)
-        }else{
-            x.innerText="Geo Not Supported"
-        }
-    }
-
-    function showPosition(data){
-        console.log(data)
-        let lat = data.coords.latitude;
-        let long = data.coords.longitude
-        var url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${long}&mode=json&units=metric&cnt=1&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
-        /*var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${data.coords.latitude},${data.coords.longitude}&key=`;
-        */
-        fetch(url)
-        .then((res) => res.json())
-        .then((data) => {
-            console.log(data)                 
-            data.list.map((item) => {
-                console.log(item.temp.day)
-                y.innerText=`${item.temp.day}°C and ${item.weather[0].description}`
-                /*z.innerHTML=`<img class='card-img-top' src='https://openweathermap.org/img/w/${item.weather[0].icon}.png' alt='weather'/>*/
-            })
-            
-        })
-    }
-      </script>
     </body>
 </html>
